@@ -1,0 +1,32 @@
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.listOnMobile{
+    width: 100vw;
+    background-color: #555;
+    animation: moveLeft .3s;
+}
+@keyframes moveLeft{
+    from{
+        right: -100vw;
+    }
+}
+
+.listOnMobile>a{
+    padding: 30px;
+    width: 100vw;
+}
+.listOnMobile>a:hover{
+    background-color: #222;
+}
+
+@media (width<=680px) {
+    .list{
+        display: none !important;
+    }
+    .hamburger{
+        display: block;
+    }
+}

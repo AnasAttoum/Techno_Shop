@@ -1,0 +1,58 @@
+.image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+
+    width: 250px;
+    height: 50%;
+    z-index: 0;
+
+    background-image: radial-gradient(var(--dots) 3.5px, transparent 3.5px);
+    background-size: 34px 34px;
+}
+
+@media (width<1290px) {
+    .image::before {
+        left: 0;
+    }
+}
+
+@media (width<1025px) {
+    .imageContainer {
+        width: 35% !important;
+    }
+
+    .image::before {
+        top: 25px;
+        left: -50px;
+        width: 200px;
+        height: 40%;
+    }
+}
+
+@media (width<900px) {
+    .container{
+        flex-direction: column !important;
+    }
+    .container>div{
+        width: 100% !important;
+    }
+    .container>div>div>div{
+        font-size: 2.5vw !important;
+        margin-bottom: 25px;
+    }
+
+    .image::before {
+        top: 0px;
+        left: 0px;
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (width<=415px) {
+    .container>div:first-child>div{
+        width: 45% !important;
+    }
+}

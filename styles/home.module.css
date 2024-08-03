@@ -1,0 +1,33 @@
+.btn{
+    background-color: #555;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+.btn:hover{
+    background-color: #333;
+}
+
+@media (width<1105px) {
+    .intro{
+        width: 100% !important;;
+    }
+}
+
+@media (width<=800px){
+    .container{
+        flex-direction: column;
+        margin-top: 50px !important;
+    }
+    .container>div>div:nth-child(1){
+        margin-bottom: 0px !important;
+        font-size: 6vw !important;
+        line-height: 7vw !important;
+    }
+    .container>div>div:nth-child(2){
+        font-size: 3vw !important;
+    }
+}

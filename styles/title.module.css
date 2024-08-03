@@ -1,0 +1,19 @@
+.title{
+    font-size: 3vw;
+    background: linear-gradient(to right, var(--primary),#aaa,var(--primary));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title>span{
+    position: relative;
+}
+
+.title>span::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid var(--primary);
+}
