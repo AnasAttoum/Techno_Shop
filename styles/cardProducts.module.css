@@ -1,6 +1,64 @@
+.container{
+    overflow: hidden;
+}
+
+.overlay{
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    border-radius: .75rem;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: top .4s;
+    color: white;
+}
+
+.container:hover .overlay{
+    top: 0;
+}
+
+.svg1,.svg2{
+    opacity: .7;
+}
+.svg1:hover{
+    opacity: 1;
+}
+.svg2:hover{
+    opacity: 1;
+}
+
+@media (width<1000px){
+    .container{
+        width: 24vw !important;
+    }
+}
+
 @media (width<650px){
     .container{
         padding: 10px !important;
-        width: 24vw !important;
+    }
+    .price{
+        left: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (width<500px){
+    .container{
+        width: 35vw !important;
+    }
+    .h1{
+        font-size: 1.8vw !important;
+    }
+    .h3,.price,.svg1.svg2{
+        font-size: 1.4vw !important;
     }
 }

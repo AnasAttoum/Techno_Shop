@@ -43,16 +43,36 @@
         margin-bottom: 25px;
     }
 
+    .imageContainer{
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    .image::before {
+        top: 0px;
+        left: 150px;
+        width: 25%;
+        height: 60%;
+    }
+}
+
+@media (width<=666px) {
+    .image::before {
+        top: 0px;
+        left: 50px;
+        width: 25%;
+        height: 60%;
+    }
+}
+
+@media (width<=416px) {
+    .container>div:first-child>div{
+        width: 45% !important;
+    }
     .image::before {
         top: 0px;
         left: 0px;
         width: 50%;
-        height: 50%;
-    }
-}
-
-@media (width<=415px) {
-    .container>div:first-child>div{
-        width: 45% !important;
+        height: 60%;
     }
 }

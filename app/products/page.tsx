@@ -1,8 +1,11 @@
 import { getLaptopsProducts, getTabletsProducts } from "@/api/api";
 import CardProduct from "@/components/CardProduct";
 import { product } from "@/CONSTANTS/types";
-import Image from "next/image";
-import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Techno Shop | Products',
+};
 
 export default async function Products() {
 

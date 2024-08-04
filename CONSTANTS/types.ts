@@ -3,5 +3,24 @@ export interface product{
     title:string,
     description:string,
     price:number,
-    thumbnail:string
+    thumbnail:string,
+    images:[],
+    stock:number,
+    brand:string,
+    weight:number,
+    dimensions:{
+        width:number,
+        height:number,
+        depth:number,
+    }
+    reviews:[{
+        rating:number,
+        comment:string,
+        date:string,
+        reviewerName:string,
+        reviewerEmail:string,
+    }],
+    warrantyInformation:string,
+    shippingInformation:string,
+    availabilityStatus:string,
 }

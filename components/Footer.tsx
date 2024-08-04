@@ -1,12 +1,10 @@
-'use client'
-
 import { icons } from "@/CONSTANTS/data";
 import Image from "next/image";
 import styles from '@/styles/footer.module.css'
 
 export default function Footer() {
   return (
-    <div className="flex justify-between mt-20 mb-5 ">
+    <div className={`flex justify-between mt-20 mb-5 ${styles.container}`}>
       <div>© 2024 Techno Shop. All Rights Reserved.</div>
       <div className="flex gap-3">
         {icons.map(icon=>{

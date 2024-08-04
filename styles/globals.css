@@ -6,6 +6,7 @@
   --color: rgb(0, 0, 0);
   --background: rgb(214, 219, 220);
   --primary: #3b82f6;
+  --secondary: #3b83f6b7;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,11 +38,45 @@ body {
 .dark {
   color: var(--color);
   background: var(--background);
-  --dots:#aaa;
+  --dots: #aaa;
 }
 
 .light {
   color: var(--background);
   background: var(--color);
-  --dots:#333;
+  --dots: #333;
+}
+
+
+/* Spinner */
+.custom-loader {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  color: #3b82f6;
+  background: radial-gradient(farthest-side, currentColor calc(100% - 6px), #0000 calc(100% - 5px) 0);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 13px), #000 calc(100% - 12px));
+  border-radius: 50%;
+  animation: s9 2s infinite linear;
+}
+
+.custom-loader::before,
+.custom-loader::after {
+  content: "";
+  grid-area: 1/1;
+  background:
+    linear-gradient(currentColor 0 0) center,
+    linear-gradient(currentColor 0 0) center;
+  background-size: 100% 10px, 10px 100%;
+  background-repeat: no-repeat;
+}
+
+.custom-loader::after {
+  transform: rotate(45deg);
+}
+
+@keyframes s9 {
+  100% {
+    transform: rotate(1turn)
+  }
 }
