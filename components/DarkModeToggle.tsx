@@ -1,5 +1,3 @@
-import { useContext } from "react"
-import { Context, ThemeContextType } from "@/context/ThemeProvider"
 import { useDispatch, useSelector } from "react-redux"
 import { RootState } from "@/lib/store"
 import { toggle } from "@/lib/slices/themeSlice"
