@@ -1,0 +1,16 @@
+@media (width<850px) {
+    .table{
+        font-size: 2vw !important;
+        gap: 20px !important;
+    }
+}
+
+@media (width<550px) {
+    .container>div{
+        font-size: 5vw !important;
+    }
+    .container>svg{
+        width: 10vw !important;
+        height: 10vw !important;
+    }
+}

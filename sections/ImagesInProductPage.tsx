@@ -1,4 +1,5 @@
 'use client'
+import Spinner from "@/components/Spinner"
 import { product } from "@/CONSTANTS/types"
 import Image from "next/image"
 import React, { useState } from "react"
@@ -20,7 +21,7 @@ export default function ImagesInProductPage({ product }: { product: product }) {
         <>
             {loading &&
                 <div className="flex flex-col justify-center items-center gap-5">
-                    <div className="custom-loader"></div>
+                    <Spinner/>
                     <div style={{ color: 'var(--primary)' }}>Loading...</div>
                 </div>
             }
@@ -36,7 +37,7 @@ export default function ImagesInProductPage({ product }: { product: product }) {
                     return (
                         <div key={index} className="relative">
                             {loadingSubImages[index] && <div className="flex justify-center items-end mt-5" style={{ marginTop: '10px' }}>
-                                <div className="custom-loader"></div>
+                            <Spinner/>
                             </div>}
                             <Image src={img} width={150} height={150} alt={product.title}
                                 onLoad={() => {

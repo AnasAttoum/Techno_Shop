@@ -5,6 +5,7 @@ import Explore from '@/sections/Explore';
 import WhyChooseUs from '@/sections/WhyChooseUs';
 
 export default function Home() {
+
   return (
     <>
       <div className={`flex items-center mt-24 gap-20 ${styles.container}`}>

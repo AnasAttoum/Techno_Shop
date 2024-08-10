@@ -1,9 +1,17 @@
+.logIn:hover{
+    background-color: var(--secondary) !important;
+}
+.logOut:hover{
+    background-color: #f46363 !important;
+}
+
 .hamburger {
     cursor: pointer;
     display: none;
 }
 
 .listOnMobile{
+    z-index: 1;
     width: 100vw;
     background-color: #555;
     animation: moveLeft .3s;
@@ -22,7 +30,7 @@
     background-color: #222;
 }
 
-@media (width<=680px) {
+@media (width<=730px) {
     .list{
         display: none !important;
     }

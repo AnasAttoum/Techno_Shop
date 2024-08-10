@@ -13,6 +13,7 @@ export interface product{
         height:number,
         depth:number,
     }
+    rating:number,
     reviews:[{
         rating:number,
         comment:string,
