@@ -13,4 +13,11 @@
         width: 10vw !important;
         height: 10vw !important;
     }
+    .details{
+        font-size: 8px !important;
+        gap: 20px !important;
+    }
+    .details>div{
+        width: 50%;
+    }
 }

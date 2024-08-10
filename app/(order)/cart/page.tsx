@@ -74,7 +74,7 @@ export default function Cart() {
                     </div>
 
 
-                    <div className="flex justify-between mt-20 my-5">
+                    <div className={`${styles.details} flex justify-between mt-20 my-5`}>
                         <div className="flex flex-col gap-5">
                             <div style={{ color: 'var(--primary)', fontWeight: '700' }}>Coupon</div>
                             <div>Enter your coupon code if you have one.</div>
